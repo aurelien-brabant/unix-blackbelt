@@ -13,7 +13,7 @@ spawn_downloader() {
    [ "$3" = 'audio' ] && args="${AUDIO_YOUTUBE_DL_ARGS}" || args="${VIDEO_YOUTUBE_DL_ARGS}"
 
     docker run                \
-                              \
+        --rm                  \
         -d                    \
         -e PGID="$(id -g)"    \
         -e PUID="$(id -u)"    \
