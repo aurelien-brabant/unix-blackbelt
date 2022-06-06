@@ -17,7 +17,7 @@ spawn_downloader() {
         -d                    \
         -e PGID="$(id -g)"    \
         -e PUID="$(id -u)"    \
-        -v "$2":/workdir:rw    \
+        -v "$2":/download:rw    \
         "$YOUTUBE_DL_IMAGE" ${args[@]} "$1"
 }
 
