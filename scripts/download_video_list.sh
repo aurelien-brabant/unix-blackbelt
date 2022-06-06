@@ -1,6 +1,6 @@
 #! /bin/bash
 
-YOUTUBE_DL_IMAGE="tnk4on/yt-dlp"
+YOUTUBE_DL_IMAGE="aurelienbrabant/yt-dlp"
 
 AUDIO_YOUTUBE_DL_ARGS="-f bestaudio[ext=m4a]"
 VIDEO_YOUTUBE_DL_ARGS=""
